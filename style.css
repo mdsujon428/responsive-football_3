@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #f6f4f4d0;
+}
+
+
+.main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+  /*--- Header style
+  ----------------------- */
+
+  .header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;  
+    height: 120px;
+    padding-bottom: 25px;
+    background: #2D25A0; 
+    position: relative;
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 1160px;
+    height: 44px; 
+    position:absolute;   
+    top: 42px;
+    left: 246px;
+   
+}
+
+
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 587px;
+    padding: 0;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+}
+
+.button{
+    color: #fff;
+    background: #E02C6D;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px 24px;
+    border: none;
+    transition: 0.5s;
+}
+
+.button:hover{
+    color: black;
+    background: #fff;
+}
+
+/*------ Tournament section
+------------------------------ */
+
+.container{
+    width: 100%;
+    background:#2D25A0 ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 78px;
+    padding-top: 25px;
+    
+
+}
+
+
+.tournament-intro-box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap:102px;
+    justify-content: center;
+    width: 1160px;
+}
+
+.name-of-the-tournament{
+    font-size: 64px;
+    font-weight: 700px;
+    line-height: 80px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.banner img{
+    width: 556px;
+    height: 438px;
+    transition: transform 1s ease;
+}
+
+.banner img:hover{
+    transform: scale(1.1);
+}
+
+
+/* Players and theirs details */
+
+.white-background{
+    padding-top: 0;
+    background:#f1f1f1;
+}
+
+.players-and-their-details{
+    margin: 78px 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap:30px;
+}
+
+
+.player{
+    width:330px;
+    height: 474px;
+    background:#fff;
+    padding:15px;
+}
+
+
+.player-image img{
+    width: 300px;
+    height: 256px;
+}
+
+p{
+    color: #6c6c6c;
+}
+
+/*  Copa America Cup and Winning Section Style */
+
+.all-highest-copa-america-cup-and-winner-container{
+    width: 1050px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 60px;
+}
+
+.descriptin{
+    align-self:center;
+}
+.image img{
+    width: 567px;
+    height: 427px;
+}
+
+
+/* --------------
+----Footer Style
+------------------ */
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+
+}
+
+.logo img{
+    width: 490px;
+    height: 110px;
+    background: #fff;
+}
+
+
+.social-media-icon ul{
+    display: inline-block;
+}
+
+.social-media-icon ul li{
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 32px;
+
+}
+
+.social-media-icon ul li a{
+    text-decoration: none;
+    color: #969BAB;
+}
+
+
+.footer-text{
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Media Queary for Mobile Device */
+
+@media  only screen and (max-width:688px){
+
+    .main-container{
+        width: 100%;
+    }
+    /* header section style */
+    .header-container{
+        width: 100%;
+    }
+    header{
+        width: 90%;
+        left: 0;
+    }
+    nav{
+        width: 70%;
+    }
+    nav ul{
+        display: none;
+    }
+
+    /* tournament intro section style */
+
+    .tournament-intro-box{
+        width: 90%;
+        height: auto;
+        margin: 0 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    } 
+
+    .banner{
+        margin-top: 25px;
+        
+    }
+
+    .banner img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .players-and-their-details{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        margin:22% ;
+    }
+
+    .all-highest-copa-america-cup-and-winner-container{
+        width: 90%;
+        height: auto;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;    
+    }
+
+    .descriptin >h2 ,.descriptin >p  ,.image >img{
+        width: 100%;
+        height: 100%;
+    } 
+    .logo {
+        width: 100%;
+        padding: 20px;     
+    }
+    .logo img{
+        width: 100%;
+        height: 100%;
+    }
+}
